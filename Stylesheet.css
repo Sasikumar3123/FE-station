@@ -20,5 +20,7 @@ h1
 }
 .text	
 {
+	display: flex;
+	flex-direction: row;
 	
 }

@@ -1,0 +1,58 @@
+*
+{
+  box-sizing: border-box;
+}
+.bg
+{
+  border: 5px solid black;
+  width: 1500px;
+  height: 720px;
+  background-image: url("https://www.traveloffpath.com/wp-content/uploads/2022/06/Bali-Top-10-Things-Travelers-Need-To-Know-Before-Visiting.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.text
+{
+  font-family: cursive;
+  font-size: 24px;
+  color: black;
+  display: flex;
+  border: 10px solid white;
+  width: 25%;
+  padding: 4px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+@media only screen and (max-width: 600px)
+{
+  .bg 
+  {
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    object-fit: cover;
+    object-position: 80% 100%;
+  }
+}
+@media only screen and (min-width: 500px)
+{
+  .bg
+  {
+    width: 100%;
+    height: auto;
+  }
+
+}
+@media only screen and (max-width: 480px)
+{
+  .bg
+  {
+    width: 100%;
+    height: auto;
+    background-size: cover;
+  }
+}
