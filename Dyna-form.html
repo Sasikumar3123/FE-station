@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300&family=Work+Sans&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+  <style type="text/css">
+*
+{
+  box-sizing: border-box;
+}
+section
+{
+  width: 100%;
+  height: 700px;
+  background: linear-gradient(to top right, #09F129,#09A0F1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper
+{
+  width: 50%;
+  height: 70%;
+  border: 1px solid black;
+  background: white;
+  box-shadow: 0 0 5px;
+  padding: 15px;
+  position:relative;
+}
+.formarea
+{
+  
+  width: 80%;
+  position: absolute;
+  padding: 20px;
+  left: 10%;
+  right: 10%;
+}
+.wrapper .formarea .header
+{
+  font-family: 'Montserrat';
+  font-weight: bolder;
+  
+}
+.wrapper .formarea form
+{
+
+  font-family: 'Josefin Sans',sans-serif;
+}
+.wrapper .formarea form .fields
+{
+  
+  margin: 5px 0px;
+}
+.wrapper .formarea form .row 
+{
+  display: grid;
+  grid-template-areas: "name email";
+}
+.wrapper .formarea form .row .fields .inputs
+{
+  padding: 10px;
+  width: 98%;
+  margin: 4px 0px;
+  border-radius: 3px;
+  border:none;
+  background:#EDEDEB;
+}
+.wrapper .formarea form .row .fields input[type="email"]
+{
+  padding: 10px;
+  width: 98%;
+  margin: 4px 2px;
+  border-radius: 3px;
+  border:none;
+  background:#EDEDEB;
+
+}
+.wrapper .formarea form .fields input
+{
+  width:100%;
+  padding: 10px;
+  margin: 5px 0px;
+  border-radius: 3px;
+  border: none;
+  background:#EDEDEB;
+}
+.wrapper .formarea form .fields textarea
+{
+  width: 100%;
+  height: 100px;
+  margin: 3px 0px;
+  resize: horizontal;
+  border-radius: 3px;
+  border: none;
+  background:#EDEDEB;
+}
+.wrapper .formarea form .submit
+
+{
+  color: red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wrapper .formarea form .submit input
+{
+  padding: 10px;
+  margin-top: 15px;
+  width: 100px;
+  background: linear-gradient(to left,#09F129,#09A0F1);
+  outline: none;
+  border: none;
+  border-radius: 1px;
+}
+</style>
+}
+</head>
+<body>
+  <section>
+    <div class="wrapper">
+      <div class="formarea">
+      <div class="header"><h1>GET IN TOUCH</h1></div>
+      <form action="POST">
+      <div class="row">
+        <div class="fields">
+         <label class="labels" for="name">Tell us your name*</label><br>
+         <input class="inputs" type="text" for="name" placeholder="Enter your name"/required><br>
+        </div>
+      
+        <div class="fields">
+         <label class="labels" for="email">Enter your email*</label><br>
+         <input class="inputs" type="email" for="email" placeholder="Enter your email"/required><br>
+        </div>
+      </div>
+
+        <div class="fields">        
+         <label class="labels" for="website">Your website</label>
+         <input class="inputs" type="website" for="website" placeholder="https://"><br>
+        </div>
+
+        <div class="fields">  
+          <label class="labels" for="message" name="message">Message</label>
+          <textarea class="inputs" name="textarea"></textarea><br>
+        </div>
+        
+        <div class="submit">
+         <input type="submit"></input>
+        </div>
+      </form>
+    </div>
+    </div>
+  </section>
+  
+</body>
+</html>
