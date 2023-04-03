@@ -1,4 +1,5 @@
 function myfunction()
 {
-	getElementById('heading').innerHTML = "Changed";
+	document.getElementById('heading').innerHTML = "Changed";
+	window.print();
 }
