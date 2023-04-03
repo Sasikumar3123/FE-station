@@ -1,0 +1,240 @@
+*
+{
+	box-sizing: border-box;
+}
+body
+{
+	background: black;
+	color: white;
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+}
+nav ul
+{
+	text-align: center;
+}
+nav ul li
+{
+	display: inline-block;
+	margin: 10px 10px;
+
+}
+nav ul li:first-child
+{
+	float: left;
+	font-size: 24px;
+}
+nav ul li:last-child
+{
+	float: right;
+}
+nav ul li a
+{
+	background: yellow;
+	text-decoration: none;
+	width: 100%;
+	padding: 10px;
+	color: black;
+	font-size: 18px;
+}
+header
+{
+	
+}
+header h1
+{
+	font-size: 88px;
+	width: 60%;
+}
+header p
+{
+	font-size: 24px;
+	width: 60%;
+}
+.icons
+{
+	
+	display: grid;
+	grid-template-columns: auto auto auto auto auto auto;
+	margin-left: 15px;
+	height: 100px;
+}
+.icons img
+{
+	width: 75%;
+	margin-top: 25px;
+}
+main
+{
+	
+	display: grid;
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	grid-template-columns: 45% 45% 45% 45%;
+	grid-column-gap: 10%;
+	grid-row-gap: 100px;
+}
+main div
+{
+	
+}
+main div h2,h3
+{
+	font-size: 34px;
+}
+main div p
+{
+	font-size: 24px;
+}
+.message 
+{
+	background: #566573;
+}
+#second
+{
+	
+	width: 100%;
+	position: absolute;
+	left: 0;
+}
+.final
+{
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.final div
+{
+	width: 45%;
+}
+.final div h3
+{
+	font-size: 34px;
+}
+.final div p{font-size: 22px}
+footer{background: #566573}
+footer div
+{
+	
+	display: inline-block;
+	width: 100%;
+}
+footer div ul li:first-child
+{
+	font-size: 24px;
+}
+footer div ul li
+{
+	display: inline-block;
+}
+footer div ul li+li 
+{
+	float: right;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+footer div ul li+li img
+{
+	width: 35px;
+}
+.button
+{
+	width: 90%;
+	margin: 40px auto;
+}
+button 
+{
+	background: yellow;
+	padding: 15px 20px;
+	font-size: 18px;
+}
+main div img 
+{
+	width: 100%;
+}
+@media screen and (max-width: 395px)
+{
+	body
+	{
+		
+	}
+	nav ul li:first-child
+	{
+		font-size: 14px;
+		margin-left: -10px;
+	}
+	nav ul li+li
+	{
+		opacity: 0;
+		font-size: 12px;
+	}
+	header h1
+	{
+		font-size: 34px;
+	}
+	header p
+	{
+		font-size: 14px;
+	}
+	.icons
+	{
+		
+		display: grid;
+		width: 100%;
+		grid-template-columns: 50% 50%;
+		height:auto;
+		grid-column-gap: -50px;
+		width: fit-content;
+		overflow: hidden;
+		padding: 10px;
+		margin: 10px;
+	}
+	.icons img 
+	{
+		width: 75%;
+	}
+	#second main
+	{
+		
+		display: block;
+	}
+	#second main h2
+	{
+		font-size: 24px;
+	}
+	#second main p 
+	{
+		font-size: 14px;
+	}
+	#second main h3
+	{
+		font-size: 22px;
+	}
+	.final div h3
+	{
+		font-size: 22px;
+	}
+	.final div p
+	{
+		font-size: 14px;
+	}
+	.button button
+	{
+		padding: 1px 5px;
+		font-size: 12px;
+	}
+	footer
+	{
+		border: 1px solid white;
+	}
+	footer div ul li:first-child
+	{
+		font-size: 18px;
+	}
+	footer div ul li a img 
+	{
+		width: 20px;
+	}
+}

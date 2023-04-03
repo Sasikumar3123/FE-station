@@ -1,0 +1,306 @@
+		*{
+			box-sizing: border-box;
+		}
+		body
+		{
+			background: black;
+			color: white;
+			width: 90%;
+			height: auto;
+			overflow: visible;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		nav
+		{
+			width: 100%;
+			margin-top: 25px;
+		}
+		nav ul
+		{
+			
+			width: 100%;
+			margin-left: auto;
+			margin-right: auto;
+			text-align: center;
+		}
+		nav ul a
+		{
+			text-decoration: none;
+			color: white;
+		}
+		
+		nav ul li 
+		{
+			display: inline-block;
+			margin: 0px 5px;
+			font-size: 18px;
+		}
+		nav ul li:nth-child(1)
+		{
+			
+			float: left;
+			font-size: 20px;
+		}
+		nav ul li:last-of-type
+		{
+			
+			float: right;
+			width: 150px;
+			height: 50px;
+			display: flex;
+			justify-content: center;
+			align-content: center;
+			margin-top: -15px;
+			padding-top: 15px;
+			color: black;
+			background: yellow;
+		}
+		nav ul li:last-of-type:hover
+		{
+			cursor: pointer;
+		}
+		nav ul #get
+		{
+			color: black;
+		}
+		header
+		{
+			position: relative;
+			margin-top: 25px;
+			width: inherit;
+			margin-left: 45px;
+		}
+		header h1
+		{
+			font-size: 88px;
+			font-family: Aerial;
+		}
+		header p
+		{
+			font-size: 24px;
+		}
+		#icons
+		{
+			width: 100%;
+			height: 100px;
+			margin-left: 0px;
+		}
+		#icons ul{
+			
+			display: flex;
+			justify-content: center;
+
+		}	
+		#icons ul li 
+		{
+			display: inline-block;
+			margin: 15px 25px;
+		}
+		#icons ul li img
+		{
+			width: 100%;
+			height: 50px;
+		}
+		#icons ul li #tinder
+		{
+			
+			display: grid;
+			grid-template-columns: 5px auto;
+		}
+		#icons ul li a #tind
+		{
+			
+			width: fit-content;
+			height: 45px;
+		}
+		#images
+		{
+			
+			height: 600px;
+			width: 100%;
+			display: grid;
+			align-content: center;
+			grid-template-columns: 50% 50%;
+			overflow: hidden;
+			grid-gap: 75px;
+		}
+		#images div
+		{
+			
+			height: 100%;
+		}
+		#images div img
+		{
+			width: 100%;
+		}
+		#images div h2
+		{
+			font-size: 48px;
+			line-height: .8;
+		}
+		#images div p
+		{
+			font-size: 30px;
+		}
+		.container
+		{
+			width: 113%;
+			background: #566573;
+			margin: 100px -100px;
+			height: 450px;
+		}
+		.message
+		{
+			width: 89%;
+			margin-left: 100px;
+			height: inherit;
+			display: grid;
+			grid-template-columns: auto auto;
+			grid-gap: 75px;
+		}
+	    .container .message div
+	    {
+
+	    	width: 100%;
+	    }
+	    .container .message div h3
+	    {
+	    	font-size: 34px;
+	    }
+	    .container .message div p
+	    {
+	    	font-size: 26px;
+	    }
+	    menu
+	    {
+	    	width: 50%;
+	    	text-align: left;
+	    }
+	    menu h3
+	    {
+	    	font-size: 38px;
+	    	margin-left: -40px;
+	    }
+	    menu p
+	    {
+	    	font-size: 26px;
+	    	margin-left: -40px;
+	    }
+	    menu button
+	    {
+	    	background: yellow;
+	    	border: none;
+	    	padding: 5px;
+	    	width: 170px;
+	    	height: 50px;
+	    	font-size: 18px;
+	    	border-width: 3px;
+	    	margin-left: -40px;
+	    	
+	    }
+	    menu a button
+	    {
+	    	text-decoration: none;
+	    	color: black;
+	    	font-size: 20px;
+	    }
+	    menu a button:hover
+	    {
+	    	cursor: pointer;
+	    }
+	    footer
+	    {
+	    	width: 113%;
+	    	height: 50px;
+	    	margin-left: -100px;
+			background: #566573;	
+	    }
+	    footer ul
+	    {
+	    	
+	    	height: 50px;
+	    	padding-top: 10px;
+	    	width: 88.5%;
+	    	margin-left: 100px;
+	    	font-size: 20px;
+	    	list-style-type: none;
+	    }
+	    footer ul li
+	    {
+	    	display: inline;
+	    }
+	    footer ul li + li
+	    {
+	    	float: right;
+	    	margin-right: 15px;
+	    }
+	    footer ul li:first-child
+	    {
+	    	margin-left: -40px;
+	    }
+@media screen and (min-width: 375px)
+{
+	*
+	{
+		box-sizing: border-box;
+
+	}
+	body
+	{
+		border: 1px solid red;
+		min-width: 90%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	nav ul li+li
+	{
+		opacity: 0;
+	}
+	nav ul li:last-of-type
+	{
+		opacity: 0;
+	}
+	nav ul li:first-child
+	{
+		font-size: 12px;
+		margin-left: 0px;
+		float: left;
+
+	}
+	header
+	{
+		
+		margin-left: 0px;
+		width: 100%;
+	}
+	header h1
+	{
+		font-size: 34px;
+	}
+	header p
+	{
+		font-size: 18px;
+	}
+	#icons
+	{
+		
+		width: 100%;
+		
+	}
+	#icons ul 
+	{
+		display: grid;
+		margin-left: -10px;
+		grid-template-columns: 50% 50%;
+	}
+	#icons ul li
+	{
+		border: 1px solid red;
+	}
+	
+
+}	
+
+
+	
